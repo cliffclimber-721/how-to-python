@@ -1,0 +1,1 @@
+croatia_list = ["c=", "c-", "dz="]
