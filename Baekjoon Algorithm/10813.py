@@ -1,3 +1,4 @@
+# 먼저 배열값을 서로 교환하거나 바꿔준다 => 이 뜻은 임의의 공간을 하나 생성해야한다는 뜻이다.
 N, M = map(int, input().split())
 # 아래와 같이 배열선언해주면 N의 값이 5일 땐 [1, 2, 3, 4, 5]가 보인다.
 basket = [i for i in range(1, N+1)]
@@ -16,4 +17,4 @@ for _ in range(M):
     # 첫번째 값으로 받아온 건 tmp에 넣는다. 개념을 다시 살펴보자.
 
 for b in basket:
-    print(b, end='')
+    print(b, end=' ')

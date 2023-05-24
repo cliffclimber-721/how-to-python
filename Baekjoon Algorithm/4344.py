@@ -1,7 +1,7 @@
 caseTest = int(input())
 
 for i in range(caseTest):
-    caseScore=list(map(int,input().split()))
+    caseScore=list(map(int, input().split()))
     caseTest = 0
     for j in caseScore[1:]:
         caseAvg = sum(caseScore[1:])/caseScore[0]
