@@ -1,9 +1,9 @@
 while True:
     s = list(str(input()))
-    if s == "#":
-        break
     cnt = 0
+    if "#" in s:
+        break
     for w in s:
-        if w in 'aeiouAEIOU':
+        if w in "aeiouAEIOU":
             cnt += 1
     print(cnt)
