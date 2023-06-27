@@ -1,11 +1,12 @@
-caseTest = int(input())
+c = int(input())
 
-for i in range(caseTest):
-    caseScore=list(map(int, input().split()))
-    caseTest = 0
-    for j in caseScore[1:]:
-        caseAvg = sum(caseScore[1:])/caseScore[0]
-        if j > caseAvg:
-            caseTest += 1
-    forPercent = caseTest / caseScore[0]*100
-    print('{0:0.3f}%'.format(forPercent))
+for _ in range(c):
+    s = list(map(int, input().split()))
+    sc = 0
+    for score in s[1:]:
+        avg = sum(s[1:]) / s[0]
+        if score > avg:
+            sc += 1
+    per = sc / len(s[1:]) * 100
+
+    print("{0:0.3f}%".format(per))
