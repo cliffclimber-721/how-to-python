@@ -1,11 +1,11 @@
 li = []
-num = 0
 
 for i in range(5):
-    fbi = input()
-    if "FBI" in fbi:
-        li.append(fbi)
-if li:
-    print(len(li))
-else:
+    find = input()
+    if "FBI" in find:
+        li.append(i)
+
+if len(li) == 0:
     print("HE GOT AWAY!")
+else:
+    print(*li)
